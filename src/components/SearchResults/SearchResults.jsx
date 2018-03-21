@@ -8,9 +8,6 @@ const SearchResults = (props) => {
   const { t } = props;
   return (
     <div className="search-results">
-      <div>
-        <h1 className="search-results--title">{t('components.searchResults.header')}</h1>
-      </div>
       <div className="search-results__results">
         <h3 className="search-results__results search-results__results--title">
           {t('components.searchResults.resultsTitle')}

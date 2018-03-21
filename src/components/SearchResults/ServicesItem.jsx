@@ -7,7 +7,8 @@ const ServicesItem = props => (
     <span className="services-item services-item_title">
       {props.index + 1}. {props.value.title}
     </span>
-    <span className="services-item services-item_price">{props.value.price} zł</span>
+    <span className="services-item services-item_price">{props.value.bundle.price} zł</span>
+    <span className="services-item services-item_date">{props.value.date} zł</span>
   </li>
 );
 

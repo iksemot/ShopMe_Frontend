@@ -2,12 +2,13 @@ import React from 'react';
 import { translate } from 'react-i18next';
 import SearchInput from 'components/SearchForm/SearchInput';
 import SubmitButton from 'components/UI/SubmitButton/SubmitButton';
+import SearchResults from 'components/SearchResults/SearchResults';
 
 class SearchForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      services: '',
+      services: [],
     };
   }
 
@@ -23,6 +24,7 @@ class SearchForm extends React.Component {
       <form className="search__form">
         <SearchInput />
         <SubmitButton value={t('components.searchForm.button')} />
+        <SearchResults services={this.state.services} />
       </form>
     );
   }
