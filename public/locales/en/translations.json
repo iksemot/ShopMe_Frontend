@@ -11,8 +11,10 @@
     },
     "UI": {
       "TitleInput": {
+        "name": "Title Offer *",
         "errorEmptyField": "This field is required!",
-        "warningMaxLength": "The title should contains at most 30 characters"
+        "errorMaxLength": "The title should contains at most 30 characters",
+        "errorMinLength": "The title should contains at least 3 characters"
       },
       "FirstNameInput": {
         "name": "Name *",
