@@ -10,6 +10,29 @@
       "resultsTitle": "Wyniki wyszukiwania"
     },
     "UI": {
+      "categorySelect": {
+        "name": "Kategoria *",
+        "errorEmptyField": "Pole wymagane!",
+        "categoryOptions": {
+          "architecture": "Budowa",
+          "garden": "Ogród",
+          "workshop-services": "Usługi Warszatatowe",
+          "transport": "Transport",
+          "photography": "Fotografia",
+          "graphics": "Grafika",
+          "marketing-and-advertising": "Marketing i Reklama",
+          "programming": "Programowanie",
+          "bookkeeping": "Księgowość",
+          "law": "Prawo",
+          "translations": "Tłumaczenia",
+          "company-and-office": "Firma i Biuro",
+          "repair-and-service": "Naprawa i Serwis",
+          "housework": "Prace Domowe",
+          "tutoring": "Korepetycje",
+          "bands-and-music": "Zespoły i Muzyka",
+          "others": "Inne"
+        }
+      },
       "FirstNameInput": {
         "name": "Imię *",
         "errorEmptyField": "Pole nie może być puste",
