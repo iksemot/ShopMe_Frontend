@@ -34,6 +34,11 @@
         }
       },
       "FirstNameInput":{
+      "TitleInput": {
+        "errorEmptyField": "This field is required!",
+        "warningMaxLength": "The title should contains at most 30 characters"
+      },
+      "FirstNameInput": {
         "name": "Name *",
         "errorEmptyField": "Field can not be empty",
         "errorMaxLength": "The name should contain at most 20 characters",
@@ -54,6 +59,11 @@
         "name": "Phone number *",
         "errorEmptyField": "Field can not be empty",
         "errorPhoneRegex": "Please enter a valid phone number e.g. 500500500 lub 914646464"
+      }
+    },
+    "offer": {
+      "add": {
+        "addOfferText": "Add offer"
       }
     }
   }

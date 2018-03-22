@@ -32,6 +32,9 @@
           "bands-and-music": "Zespoły i Muzyka",
           "others": "Inne"
         }
+      "TitleInput": {
+        "errorEmptyField": "Pole wymagane!",
+        "warningMaxLength": "Tytuł nie powinien być dłuższy niż 30 znaków"
       },
       "FirstNameInput": {
         "name": "Imię *",
@@ -60,6 +63,11 @@
         "name": "Telefon *",
         "errorEmptyField": "Pole nie może być puste",
         "errorPhoneRegex": "Podaj poprawny numer telefonu np. 500500500 lub 914646464"
+      }
+    },
+    "offer": {
+      "add": {
+        "addOfferText": "Dodaj ofertę"
       }
     },
     "offer": {
