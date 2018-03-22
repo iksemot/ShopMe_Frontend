@@ -17,17 +17,22 @@ class CategorySelect extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  checkValidity(event) {
-    const { value } = event.target;
+  checkValidity(value) {
+    const { t } = this.props;
+    const isValid = true;
 
     if (value === '' && this.state.isRequired) {
-      const { t } = this.props;
       this.setState({ errorMessage: t('components.UI.categorySelect.errorEmptyField') });
+      return false;
     }
+
+    this.setState({ errorMessage: '' });
+    return isValid;
   }
 
   handleChange(event) {
     const { value } = event.target;
+    this.checkValidity(value);
     this.setState({ value });
   }
 
