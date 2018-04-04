@@ -13,7 +13,7 @@ jobs:
   build:
     <<: *defaults
     steps:
-      - run: mkdir -p repo && repo
+      - run: mkdir -p repo && cd repo
       - checkout
 
       # Download and cache dependencies
