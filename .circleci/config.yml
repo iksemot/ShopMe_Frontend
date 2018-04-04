@@ -41,8 +41,7 @@ jobs:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/repo
-      - run: cd repo
+          at: ~/
       - run: ls -la .
       - run: yarn run eslint
 
