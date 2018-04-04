@@ -31,15 +31,15 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - persist_to_workspace:
-        root: ~
-        paths:
-          - repo
+          root: ~
+          paths:
+            - repo
 
   eslint:
     <<: *defaults
     steps:
       - attach_workspace:
-        at: ~/repo
+          at: ~/repo
       - run: cd repo
       - run: yarn run eslint
 
