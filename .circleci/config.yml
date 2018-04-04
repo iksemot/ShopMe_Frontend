@@ -5,7 +5,7 @@
 version: 2
 
 defaults: &defaults
-  working_directory: /repo
+  working_directory: ~/repo
   docker:
     - image: circleci/node:9.8.0
 
@@ -29,9 +29,16 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-  js_linter:
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - repo
+
+  eslint:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/
       - run: yarn run eslint
 
 workflows:
@@ -39,6 +46,6 @@ workflows:
   build-and-test:
     jobs:
       - build
-      - test:
+      - eslint:
           requires:
             - build
