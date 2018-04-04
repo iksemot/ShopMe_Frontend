@@ -42,6 +42,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
+      - run: cd repo
       - run: ls -la .
       - run: yarn run eslint
 
