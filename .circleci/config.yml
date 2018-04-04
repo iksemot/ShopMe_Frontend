@@ -29,6 +29,9 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+
+      - run: ls -la .
+
       - persist_to_workspace:
           root: ~/
           paths:
@@ -39,6 +42,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
+      - run: ls -la .
       - run: yarn run eslint
 
 workflows:
